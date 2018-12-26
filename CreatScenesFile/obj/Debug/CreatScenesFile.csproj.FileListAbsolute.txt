@@ -1,0 +1,22 @@
+E:\VS Project\CreatScenesFile\CreatScenesFile\bin\Debug\CreatScenesFile.exe.config
+E:\VS Project\CreatScenesFile\CreatScenesFile\bin\Debug\CreatScenesFile.exe
+E:\VS Project\CreatScenesFile\CreatScenesFile\bin\Debug\CreatScenesFile.pdb
+E:\VS Project\CreatScenesFile\CreatScenesFile\obj\Debug\CreatScenesFile.Form1.resources
+E:\VS Project\CreatScenesFile\CreatScenesFile\obj\Debug\CreatScenesFile.Properties.Resources.resources
+E:\VS Project\CreatScenesFile\CreatScenesFile\obj\Debug\CreatScenesFile.csproj.GenerateResource.Cache
+E:\VS Project\CreatScenesFile\CreatScenesFile\obj\Debug\CreatScenesFile.exe
+E:\VS Project\CreatScenesFile\CreatScenesFile\obj\Debug\CreatScenesFile.pdb
+E:\VS Project\CreatScenesFile\CreatScenesFile\obj\Debug\CreatScenesFile.TipShow.resources
+E:\VS Project\CreatScenesFile\CreatScenesFile\obj\Debug\CreatScenesFile.csprojAssemblyReference.cache
+E:\VS Project\CreatScenesFile\CreatScenesFile\obj\Debug\CreatScenesFile.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Source\Repos\DlotFire\CreatScenesFile\CreatScenesFile\bin\Debug\CreatScenesFile.exe.config
+C:\Users\Administrator\Source\Repos\DlotFire\CreatScenesFile\CreatScenesFile\bin\Debug\CreatScenesFile.exe
+C:\Users\Administrator\Source\Repos\DlotFire\CreatScenesFile\CreatScenesFile\bin\Debug\CreatScenesFile.pdb
+C:\Users\Administrator\Source\Repos\DlotFire\CreatScenesFile\CreatScenesFile\obj\Debug\CreatScenesFile.csprojAssemblyReference.cache
+C:\Users\Administrator\Source\Repos\DlotFire\CreatScenesFile\CreatScenesFile\obj\Debug\CreatScenesFile.Form1.resources
+C:\Users\Administrator\Source\Repos\DlotFire\CreatScenesFile\CreatScenesFile\obj\Debug\CreatScenesFile.Properties.Resources.resources
+C:\Users\Administrator\Source\Repos\DlotFire\CreatScenesFile\CreatScenesFile\obj\Debug\CreatScenesFile.TipShow.resources
+C:\Users\Administrator\Source\Repos\DlotFire\CreatScenesFile\CreatScenesFile\obj\Debug\CreatScenesFile.csproj.GenerateResource.cache
+C:\Users\Administrator\Source\Repos\DlotFire\CreatScenesFile\CreatScenesFile\obj\Debug\CreatScenesFile.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Source\Repos\DlotFire\CreatScenesFile\CreatScenesFile\obj\Debug\CreatScenesFile.exe
+C:\Users\Administrator\Source\Repos\DlotFire\CreatScenesFile\CreatScenesFile\obj\Debug\CreatScenesFile.pdb
