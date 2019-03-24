@@ -36,10 +36,10 @@ namespace CreatScenesFile
             //{
             //    for (int j = 0; j < dateTab.Columns.Count; j++)
             //    {
-                    //if (!ToolHelp.GetInstants.StrDict.ContainsKey(dateTab.Rows[i][j].ToString()))
-                    //{
-                    //    ToolHelp.GetInstants.StrDict.Add(dateTab.Rows[i][j].ToString(), j);
-                    //}
+            //if (!ToolHelp.GetInstants.StrDict.ContainsKey(dateTab.Rows[i][j].ToString()))
+            //{
+            //    ToolHelp.GetInstants.StrDict.Add(dateTab.Rows[i][j].ToString(), j);
+            //}
             //    }
             //}
 
@@ -243,7 +243,7 @@ namespace CreatScenesFile
                     {
                         case "log": //对白
                             {
-                                
+
                                 AddContents("    HotKeys.currentTask =\"" + string.Format("shoot{0:d3}", i + 1) + "\"");
                                 AddContents(
                                     "    CS.DialogUIController.GetInstance():SwitchTechDialogUI():updataDailogUI5(" +
@@ -264,7 +264,7 @@ namespace CreatScenesFile
 
                         case "pd": //判断
                             {
-                                
+
                                 AddContents("    HotKeys.currentTask =\"" + string.Format("shoot{0:d3}", i + 1) + "\"");
                                 AddContents("    CS.DialogUIController.GetInstance():SwitchTechDialogUI():updataDailogUI2(" +
                                             Single<ToolHelp>.GetInstance.GetDict("判断题_ID号") + ")");
@@ -274,7 +274,7 @@ namespace CreatScenesFile
 
                         case "xz": //选择
                             {
-                                
+
                                 AddContents("    HotKeys.currentTask =\"" + string.Format("shoot{0:d3}", i + 1) + "\"");
                                 AddContents("    CS.DialogUIController.GetInstance():SwitchTechDialogUI():updataDailogUI6(" +
                                             Single<ToolHelp>.GetInstance.GetDict("选择题_ID号") + ")");
@@ -284,7 +284,7 @@ namespace CreatScenesFile
 
                         case "wd": //问答
                             {
-                                
+
                                 AddContents("    HotKeys.currentTask =\"" + string.Format("shoot{0:d3}", i + 1) + "\"");
                                 AddContents("    CS.DialogUIController.GetInstance():SwitchTechDialogUI():updataDailogUI7(" +
                                             Single<ToolHelp>.GetInstance.GetDict("问答题_ID号") + ")");
@@ -294,7 +294,7 @@ namespace CreatScenesFile
 
                         case "tw": //智者提问
                             {
-                                
+
                                 AddContents("    HotKeys.currentTask =\"" + string.Format("shoot{0:d3}", i + 1) + "\"");
                                 AddContents("    CS.WisemanMgr.GetInstans():WisemansGo(" +
                                             Single<ToolHelp>.GetInstance.GetDict("智者提问题_ID号") + ")");
@@ -307,7 +307,7 @@ namespace CreatScenesFile
                                 AddContents("  -- 切镜");
                                 Contetn_if(Single<LoadExcell>.GetInstance.InfoDict[strShoot].shootid, false);
                                 AddContents("    record = ft");
-                                
+
                                 AddContents("    HotKeys.PlayAnimation(\"" +
                                             Single<ToolHelp>.GetInstance.GetCameraNumber(strShoot, true) + "\")"); //切镜
                             }
@@ -315,7 +315,7 @@ namespace CreatScenesFile
 
                         case "gc": //智者过场动画
                             {
-                                
+
                                 AddContents("    HotKeys.currentTask =\"" + string.Format("shoot{0:d3}", i + 1) + "\"");
                                 AddContents("    CS.WisemanMgr.GetInstans():WisemanFly(" +
                                             Single<ToolHelp>.GetInstance.GetDict("智者过场动画题_ID号") + ")");
@@ -328,15 +328,15 @@ namespace CreatScenesFile
                                 AddContents("  -- 切镜");
                                 Contetn_if(Single<LoadExcell>.GetInstance.InfoDict[strShoot].shootid, false);
                                 AddContents("    record = ft");
-                                
+
                                 AddContents("    HotKeys.PlayAnimation(\"" +
-                                            Single<ToolHelp>.GetInstance.GetCameraNumber(strShoot,true) + "\")"); //切镜
+                                            Single<ToolHelp>.GetInstance.GetCameraNumber(strShoot, true) + "\")"); //切镜
                             }
                             break;
 
                         case "kp": //科普
                             {
-                                
+
                                 AddContents("    HotKeys.currentTask =\"" + string.Format("shoot{0:d3}", i + 1) + "\"");
                                 AddContents("    CS.WisemanMgr.GetInstans():WisemanKepu(" +
                                             Single<ToolHelp>.GetInstance.GetDict("智者科普题_ID号") + ")");
@@ -349,13 +349,13 @@ namespace CreatScenesFile
                                 AddContents("  -- 切镜");
                                 Contetn_if(Single<LoadExcell>.GetInstance.InfoDict[strShoot].shootid, false);
                                 AddContents("    record = ft");
-                                
+
                                 AddContents("    HotKeys.PlayAnimation(\"" +
                                             Single<ToolHelp>.GetInstance.GetCameraNumber(strShoot, true) + "\")"); //切镜
                             }
                             break;
                         case "wx": //应对界面
-                            
+
                             AddContents("    HotKeys.currentTask =\"" + string.Format("shoot{0:d3}", i + 1) + "\"");
                             AddContents("    CS.DealWithControlle.GetInstance():SwitchDealWithUI():UpdataDealWithUI(" +
                                         Single<ToolHelp>.GetInstance.GetDict("应对界面题_ID号") + ")");
@@ -378,7 +378,7 @@ namespace CreatScenesFile
                     AddContents("  record = ft");
                     AddContents("  HotKeys.currentTask =\"" + string.Format("shoot{0:d3}", i + 1) + "\"");
                     AddContents("  HotKeys.PlayAnimation(\"" + string.Format("shoot{0:d3}", i + 1) + "\")");//切镜
-                    
+
                     //"end",if方法结束
                     AddContents("end");
                     AddContents("");
