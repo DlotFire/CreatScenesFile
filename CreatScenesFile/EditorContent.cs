@@ -204,7 +204,7 @@ namespace CreatScenesFile
         }
 
         /// <summary>
-        /// 内容中，update方法
+        /// 内容中，update方法 
         /// </summary>
         private void Content_update()
         {
