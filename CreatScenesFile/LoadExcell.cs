@@ -8,7 +8,7 @@ namespace CreatScenesFile
     class LoadExcell : Single<LoadExcell>
     {
 
-        private Dictionary<string, shootItem> infoDict;        
+        private Dictionary<string, shootItem> infoDict;
         /// <summary>
         /// 要生成的全部内容，string 是镜头号，shootItem是分镜内容
         /// </summary>
@@ -24,12 +24,11 @@ namespace CreatScenesFile
                 return infoDict;
             }
         }
-        
 
-        /// <summary> 根据路径加载excell表到DataTable 
+        /// <summary>
+        /// 根据路径加载excell表到DataTable
         /// </summary>
         /// <param name="strExcelPath"></param>
-        /// <returns></returns>
         private void GetExcelTableByOleDB(string strExcelPath)
         {
             //获取文件扩展名
@@ -69,11 +68,11 @@ namespace CreatScenesFile
             DataTable datTabl = new DataTable();
             OleDbDataAdapter myData = new OleDbDataAdapter("select * from [" + schemaTable.Rows[0][2].ToString().Trim() + "]", objConn);
             myData.Fill(datTabl); //填充数据
-            
+
 
             for (int i = 0; i < datTabl.Rows.Count; i++)
-            {                
-                if (datTabl.Rows[i][1].ToString().Contains("shoot") 
+            {
+                if (datTabl.Rows[i][1].ToString().Contains("shoot")
                     && (datTabl.Rows[i][4] as string) != null
                     && !InfoDict.ContainsKey(datTabl.Rows[i][1].ToString()))
                 {
@@ -82,7 +81,7 @@ namespace CreatScenesFile
                     shootIt.scenesId = datTabl.Rows[i][0].ToString();
                     shootIt.word = datTabl.Rows[i][4].ToString();
                     shootIt.type = "log";
-                    InfoDict.Add(shootIt.shootid, shootIt);                    
+                    InfoDict.Add(shootIt.shootid, shootIt);
                 }
             }
 
@@ -100,7 +99,7 @@ namespace CreatScenesFile
                 {
                     InfoDict[datTabl.Rows[i][1].ToString()].type = datTabl.Rows[i][2].ToString();
                     InfoDict[datTabl.Rows[i][1].ToString()].TeachWord = datTabl.Rows[i][5].ToString();
-                    
+
                     switch (InfoDict[datTabl.Rows[i][1].ToString()].type)
                     {
                         //case null: //对白
@@ -121,30 +120,30 @@ namespace CreatScenesFile
                             }
                             break;
 
-                        //case "wd": //问答
-                        //    {
-                        //    }
-                        //    break;
+                            //case "wd": //问答
+                            //    {
+                            //    }
+                            //    break;
 
-                        //case "tw": //智者提问
-                        //    {
+                            //case "tw": //智者提问
+                            //    {
 
-                        //    }
-                        //    break;
+                            //    }
+                            //    break;
 
-                        //case "gc": //智者过场动画
-                        //    {
+                            //case "gc": //智者过场动画
+                            //    {
 
-                        //    }
-                        //    break;
+                            //    }
+                            //    break;
 
-                        //case "kp": //科普
-                        //    {
+                            //case "kp": //科普
+                            //    {
 
-                        //    }
-                        //    break;
-                        //case "yd": //应对界面
-                        //    break;
+                            //    }
+                            //    break;
+                            //case "yd": //应对界面
+                            //    break;
                     }
                 }
             }
