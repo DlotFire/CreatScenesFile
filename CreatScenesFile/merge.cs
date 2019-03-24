@@ -83,9 +83,12 @@ namespace CreatScenesFile
                     break;
             }
         }
-
-        /// <summary> 创建XML 
+        
+        /// <summary>
+        /// 创建xml
         /// </summary>
+        /// <param name="type"></param>
+        /// <param name="details"></param>
         private void creatXML(Type type,shootItem details)
         {
             path = Single<ToolHelp>.GetInstance.xmlPath(
