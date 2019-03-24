@@ -16,10 +16,11 @@ namespace CreatScenesFile
         private object obj;//实例化
         private object[] paramer = new object[1];//实参装箱 
         private PropertyInfo[] propertyInfos;//公共属性
-        
-        /// <summary> 给内容分类，如选择、判断、对白等 
+
+        /// <summary>
+        /// 给内容分类，如选择、判断、对白等 
         /// </summary>
-        /// <param name="strType">题目类型</param>
+        /// <param name="shootItm"></param>
         public void selectDetails(shootItem shootItm)
         {
             switch (shootItm.type)
